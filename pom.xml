@@ -57,6 +57,10 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>cloudera</id>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+    </repository>
   </repositories>
 
   <parent>
@@ -78,7 +82,10 @@
     <test.output.tofile>true</test.output.tofile>
 
     <!-- Hadoop Versions -->
+    <!--
     <hbase.version>1.0.1</hbase.version>
+    -->
+    <hbase.version>1.0.0-cdh5.4.0</hbase.version>
     <hadoop-two.version>2.5.1</hadoop-two.version>
 
     <!-- Dependency versions -->
